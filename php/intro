@@ -2,4 +2,4 @@
 //This is setting a variable
 $frontpage = "front";
 //This is echoing that variable. By calling the variable with the "$" in front, it will display the value (the content)
-echo ("$frontpage");
+echo "$frontpage";
