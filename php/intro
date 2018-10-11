@@ -1,5 +1,13 @@
-
 //This is setting a variable
 $frontpage = "front";
 //This is echoing that variable. By calling the variable with the "$" in front, it will display the value (the content)
+echo "$frontpage";
+
+//This is a function 
+is_front_page();
+
+// A function always has () at the end. Look it up in the wordpress codex.
+//I don't know what this function returns, so to find out you set it to a variable and echo it out.
+
+$frontpage = is_front_page();
 echo "$frontpage";
