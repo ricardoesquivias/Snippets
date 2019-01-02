@@ -1,0 +1,28 @@
+**Created a repeater with an image
+**For the image, you must set the var inside of the loop for each row.
+
+<section class="section-padding">
+		<div class="container">
+				<div class="row">
+					<?php // check if the repeater field has rows of data
+					if( have_rows('location') ):
+    // loop through the rows of data
+   				while ( have_rows('location') ) : the_row();
+
+					// vars
+					$image = get_sub_field('location_image');
+
+					?>
+
+					<div class="col-lg-6">
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+						<p><strong><?php the_sub_field('location_title'); ?></strong></p>
+					</div><!-- /.col -->
+					<?php
+   endwhile;
+endif;
+
+   ?>
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+</section>
