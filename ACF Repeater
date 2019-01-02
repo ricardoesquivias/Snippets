@@ -1,3 +1,5 @@
+https://www.advancedcustomfields.com/resources/repeater/
+
 **Created a repeater with an image
 **For the image, you must set the var inside of the loop for each row.
 
@@ -26,3 +28,5 @@ endif;
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 </section>
+
+
